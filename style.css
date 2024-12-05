@@ -1,0 +1,223 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+  color: rgb(185, 100, 100);
+  padding-top: 70px; /* Adjust based on the height of your navbar */
+}
+
+/* Navbar Styles */
+.navbar-brand img {
+  vertical-align: middle;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #f8f9fa;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #f1c40f;
+}
+
+/* Carousel Images */
+.carousel-inner .carousel-item img {
+  width: 75%; /* Makes the image width smaller */
+  height: 50px; /* Set a lower height for a shorter image */
+  object-fit: cover; /* Ensures the image is not stretched */
+  margin: 0 auto; /* Centers the image */
+}
+
+
+/* Animation for carousel text */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Ensure smooth transition for the text */
+.carousel-caption .title, .carousel-caption .description {
+  opacity: 0;  /* Start as invisible */
+  transform: translateY(20px); /* Start slightly below */
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out; /* Add transition for smooth effect */
+  animation: fadeIn 1s ease-in-out forwards; /* Apply fadeIn animation */
+}
+
+.carousel-caption .title {
+  animation-delay: 0.3s; /* Delay for the title */
+}
+
+.carousel-caption .description {
+  animation-delay: 0.6s; /* Delay for the description */
+}
+
+.carousel-item {
+  transition: opacity 1s ease-in-out; /* Smooth transition for each carousel item */
+}
+
+
+
+/* Carousel Caption */
+.carousel-caption.top-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%); /* Centers the text horizontally */
+  color: #e7c81a;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Adds better readability on bright images */
+  padding-top: 1rem; /* Adds space from the top edge */
+  z-index: 10;
+}
+
+.carousel-caption.top-caption h5 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.carousel-caption.top-caption p {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+/* Header Section */
+header {
+  background-color: #007bff;
+  color: #fff;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+header .btn-primary {
+  background-color: #f1c40f;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease-in-out;
+}
+
+header .btn-primary:hover {
+  background-color: #d4ac0d;
+}
+
+/* Section Titles */
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.section-title {
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  color: #555;
+}
+
+/* Services Section */
+#services .card {
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease-in-out;
+}
+
+#services .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+#services .card-title {
+  font-size: 1.25rem;
+  color: #007bff;
+}
+
+#services .btn-primary {
+  background-color: #007bff;
+  border: none;
+}
+
+#services .btn-primary:hover {
+  background-color: #0056b3;
+}
+
+#services .card-img-top {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* About Section */
+#about {
+  text-align: center;
+  padding: 2rem;
+}
+
+#about p {
+  max-width: 700px;
+  margin: 0 auto;
+  color: #555;
+}
+
+/* Contact Section */
+#contact form .form-control {
+  border-radius: 0.25rem;
+}
+
+#contact .btn-primary {
+  background-color: #f1c40f;
+  border: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#contact .btn-primary:hover {
+  background-color: #d4ac0d;
+}
+
+/* Footer Styles */
+
+footer {
+  background-color: #333;
+  color: #f8f9fa;
+  text-align: center;
+  padding: 1.5rem 0;
+}
+
+footer img {
+  filter: brightness(0) invert(1);
+  margin-bottom: 0.5rem;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.875rem;
+}
+
+footer p.text-muted {
+  font-size: 0.75rem;
+  color: #ccc;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header {
+    padding: 2rem 1rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  #services .card-title {
+    font-size: 1.1rem;
+  }
+}

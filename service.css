@@ -1,0 +1,99 @@
+/* Navbar hover effect */
+.navbar-nav .nav-link:hover {
+  color: #f8b400 !important;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Services section background */
+#services {
+  background: linear-gradient(to right, #dfa443, #f3e58a);
+  color: rgb(0, 0, 0);
+  padding: 80px 0;
+}
+
+/* Service Card hover effect */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Centered Image container */
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Service Card body text */
+.card-body {
+  background-color: rgba(237, 229, 162, 0.85);
+  padding: 25px;
+  border-radius: 8px;
+}
+
+.btn-primary {
+  background-color: #726009;
+  border-color: #13120d;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #edd558;
+  border-color: #f4e493;
+}
+
+/* Input fields focus animation */
+.form-control:focus {
+  border-color: #ff6f00;
+  box-shadow: 0 0 5px rgba(255, 111, 0, 0.5);
+  
+  
+}
+
+/* Footer Styles */
+
+footer {
+  background-color: #333;
+  color: #ffffff;
+  text-align: center;
+  padding: 1.5rem 0;
+}
+
+footer img {
+  filter: brightness(0) invert(1);
+  margin-bottom: 0.5rem;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.875rem;
+}
+
+footer p.text-muted {
+  font-size: 0.75rem;
+  color: #ffc802;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header {
+    padding: 2rem 1rem;
+    
+  }
+
+  h2 {
+    font-size: 1.5rem;
+
+  }
+
+  #services .card-title {
+    font-size: 1.1rem;
+
+    
+  }
+}
+
